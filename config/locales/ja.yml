@@ -1,8 +1,18 @@
---2020-12-13 02:12:17--  https://raw.githubsercontent.com/svenfuches/rails-i18/master/rails/locale/ja.yml
-Resolving raw.githubsercontent.com (raw.githubsercontent.com)... 103.224.212.222
-Connecting to raw.githubsercontent.com (raw.githubsercontent.com)|103.224.212.222|:443... connected.
-ERROR: cannot verify raw.githubsercontent.com's certificate, issued by ‘CN=Let's Encrypt Authority X3,O=Let's Encrypt,C=US’:
-  Issued certificate has expired.
-ERROR: no certificate subject alternative name matches
-	requested host name ‘raw.githubsercontent.com’.
-To connect to raw.githubsercontent.com insecurely, use `--no-check-certificate'.
+ja:
+  acriverecord:
+    errors:
+      messages:
+        record_invalid: "バリデーションに失敗しました: %{errors}"
+        restrict_dependent_destroy:
+          has_one: "%{record}が存在しているので削除できません"
+          has_many: "%{record}が存在しているので削除できません"
+    models:
+      task: タスク
+    attributes:
+      task: 
+      id: ID
+      name: 名称
+      description: 詳しい説明
+      created_at: 登録日時
+      updated_at: 更新日時
+      
